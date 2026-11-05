@@ -1,0 +1,23 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Visual Studio
+.vscode/
+
+# SQLite - no publicar bases de datos locales
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Configuración local
+appsettings.Development.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

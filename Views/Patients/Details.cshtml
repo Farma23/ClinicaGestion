@@ -1,0 +1,26 @@
+@model ClinicaGestion.Models.Patient
+@{ ViewBag.Title = "Detalle Paciente"; }
+
+<div class="row justify-content-center">
+<div class="col-md-6">
+<div class="card shadow-sm">
+    <div class="card-header bg-info text-white"><h4 class="mb-0">Detalle del Paciente</h4></div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-4">Nombre Completo</dt>
+            <dd class="col-sm-8">@Model.FullName</dd>
+            <dt class="col-sm-4">Fecha de Nacimiento</dt>
+            <dd class="col-sm-8">@Model.DateOfBirth.ToString("dd/MM/yyyy")</dd>
+            <dt class="col-sm-4">Telefono</dt>
+            <dd class="col-sm-8">@Model.PhoneNumber</dd>
+            <dt class="col-sm-4">Direccion</dt>
+            <dd class="col-sm-8">@Model.Address</dd>
+        </dl>
+    </div>
+    <div class="card-footer d-flex gap-2">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    </div>
+</div>
+</div>
+</div>
